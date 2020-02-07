@@ -30,4 +30,9 @@ describe ('User', () => {
     const jupiter = newUser.calcJupiter();
     expect(jupiter).toEqual(2);
   });
+
+  test ('should test for a life expentency variable on Earth', () => {
+    const earth = newUser.earthLE();
+    expect(earth).toEqual(1);
+  });
 });
