@@ -55,7 +55,10 @@ _This is a webpage that allows the user to input a number and give back a list o
       * Test Pass: Users age is calculated to Jupiter time (2 y/o).
 * Determine life-expectenecy on Earth.
    * Input: users age (ex:35).
+      * Earth LE test fails.
    * Output: age on Earth, and number of years left.
+      * Test Failure: deep equality, .toEqual(1)
+      * Test Pass:
 * Determine life-expectenecy on Venus.
    * Input: users age (ex:35).
    * Output: age on Venus, and number of years left.
