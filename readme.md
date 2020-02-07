@@ -1,46 +1,64 @@
-Pizza Parlor
-_This is a running webpage, as of 1/31/20.
-By Antonio Cruz
-Description
-This is a website of my Pizza Parlor. The user is given options to choose a size of pizza, and their choice of toppings to go with it. Link to gh-pages branch https://github.com/assassin56/friday_project4
+# _Arrays and Looping_
 
-SPEC Sheet
-Pizza-size options are displayed
-Input: drop-down box for user's size
-Output: Pizza-size is stored.
-Pizza-topping options are displayed as select-boxes.
-Input: Upon user click.
-Output: Variety of toppings are saved based on choice.
-Selected pizza size is instantiated for the user.
-Input: small, memdium, large.
-Output: Object for given size is created.
-Toppings prototypes are saved onto the user's object.
-Input: submit.
-Output: saved toppings.
-Total price is displayed at the bottom.
-Input: submit.
-Output: total price of size and toppings.
-Setup/Installation Requirements
-Install Git Bash from the browser
-From the bash command line, navigate to the desktop with "cd desktop".
-Copy the repository url from above.
-Enter "git clone " on the command line, and "cd friday_project4" to access the directory.
-Type "open index.html" to open the website in your default browser.
-Known Bugs
-Does not yet return a total price
+#### _This is a almost running webpage, as of 1/24/20._
 
-Support and contact details
-Antonio Cruz's email: codrocks.cruz3@gmail.com
+#### By _**Antonio Cruz**_
 
-Technologies Used
-Markdown
-CSS
-HTML
-Bootstrap
-Git
-JQuery
-JavaScript
-License
-The MIT license
+## Description
 
-Copyright (c) 2020 Antonio Cruz
+_Link to gh-pages branch_
+_https://assassin56.github.io/friday_project3/_
+
+_This is a webpage that allows the user to input a number and give back a list of numbers from 0 to their input. The 1s, 2s, and 3s are to be replaced with silly phrases that would imitate a robot._
+
+## SPEC Sheet
+
+* Create a function that determines the range from 0 to any number based on user-input.
+   * Input: function range(inputtedInteger)
+   * Output: Push counter variable created inside the function to array.
+      * Loop Counter until <= the value of the user-input.
+      * Push until equal.
+      * Return the array
+* Store, in an array, the range from 0 to an inputted number by the user.
+   * Input: Example [24]
+   * Output: array1 = [0, 1,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 , 10... 24]
+* Pass this array to another for-loop within the same function. This will replace the following values with the specified phrases in the array: 
+  [1]: "Beep!"
+  [2]: "Boop!"
+  [3]: "I'm sorry Dave. I'm afraid I can't do that."
+   * Input: Example [24]
+   * Output: array = [0, "Beep", "Boop", "I'm sorry Dave. I'm afraid I can't do that.", 4, 5, 6, 7, 8, 9, "Beep"... "I'm sorry Dave. I'm afraid I can't do that."]
+* Upon user submition, return array as text to the webpage.
+   * Input: Example [24]
+   * Output: array = [0, "Beep", "Boop", "I'm sorry Dave. I'm afraid I can't do that.", 4, 5, 6, 7, 8, 9, "Beep"... "I'm sorry Dave. I'm afraid I can't do that."]
+
+
+
+## Setup/Installation Requirements
+
+* Click the link above under the "Descriptions" tab. This should lead you directly to the webpage.
+
+## Known Bugs
+
+_N/A_
+
+## Support and contact details
+
+_Antonio Cruz's email:_
+_codrocks.cruz3@gmail.com_
+
+## Technologies Used
+
+* _Markdown_
+* _CSS_
+* _HTML_
+* _Bootstrap_
+* _Git_
+* _JavaScript_
+* _JQuery_
+
+### License
+
+**The MIT license**
+
+Copyright (c) 2020 **Antonio Cruz**
