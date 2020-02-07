@@ -16,5 +16,8 @@
     "url": "https://github.com/assassin56/friday_project5/issues"
   },
   "homepage": "https://github.com/assassin56/friday_project5#readme",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "webpack": "4.39.3"
+  }
 }
