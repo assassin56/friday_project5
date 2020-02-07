@@ -26,4 +26,16 @@ export class User {
     let jupiter = Math.floor(currentAge/11.86);
     return jupiter;
   }
+
+  earthLE() {
+    let currentAge = this.age;
+    const lifeExp = 72;
+    let numYearsLeft = (lifeExp - currentAge);
+    let numYearsPast = (-currentAge + lifeExp);
+    if (currentAge <= lifeExp) {
+      return numYearsLeft;
+    } else {
+      return numYearsPast;
+    }
+  }
 }
