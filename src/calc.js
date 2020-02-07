@@ -20,4 +20,10 @@ export class User {
     let mars = Math.floor(currentAge/1.88);
     return mars;
   }
+
+  calcJupiter() {
+    let currentAge = this.age;
+    let jupiter = Math.floor(currentAge/11.86);
+    return jupiter;
+  }
 }
