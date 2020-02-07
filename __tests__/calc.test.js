@@ -25,4 +25,9 @@ describe ('User', () => {
     const mars = newUser.calcMars();
     expect(mars).toEqual(18);
   });
+
+  test ('should test the users age in Jupiter years', () => {
+    const jupiter = newUser.calcJupiter();
+    expect(jupiter).toEqual(1);
+  });
 });
