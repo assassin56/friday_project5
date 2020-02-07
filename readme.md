@@ -13,25 +13,24 @@ _This is a webpage that allows the user to input a number and give back a list o
 
 ## SPEC Sheet
 
-* Create a function that determines the range from 0 to any number based on user-input.
-   * Input: function range(inputtedInteger)
-   * Output: Push counter variable created inside the function to array.
-      * Loop Counter until <= the value of the user-input.
-      * Push until equal.
-      * Return the array
-* Store, in an array, the range from 0 to an inputted number by the user.
-   * Input: Example [24]
-   * Output: array1 = [0, 1,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 , 10... 24]
-* Pass this array to another for-loop within the same function. This will replace the following values with the specified phrases in the array: 
-  [1]: "Beep!"
-  [2]: "Boop!"
-  [3]: "I'm sorry Dave. I'm afraid I can't do that."
-   * Input: Example [24]
-   * Output: array = [0, "Beep", "Boop", "I'm sorry Dave. I'm afraid I can't do that.", 4, 5, 6, 7, 8, 9, "Beep"... "I'm sorry Dave. I'm afraid I can't do that."]
-* Upon user submition, return array as text to the webpage.
-   * Input: Example [24]
-   * Output: array = [0, "Beep", "Boop", "I'm sorry Dave. I'm afraid I can't do that.", 4, 5, 6, 7, 8, 9, "Beep"... "I'm sorry Dave. I'm afraid I can't do that."]
-
+* A class which returns a human's age in...:
+   * Input: user's age (ex:35).
+   * Output: age in Mercury years
+* A class which returns a human's age in...:
+   * Input: user's age (ex:35).
+   * Output: age in Venus years
+* A class which returns a human's age in...:
+   * Input: user's age (ex:35).
+   * Output: age in Mars years
+* A class which returns a human's age in...:
+   * Input: user's age (ex:35).
+   * Output: age in Jupiter years
+* Determine how long the user has left to live on each planet.
+   * Input: users age (ex:35).
+   * Output: age on each planet, and number of years left.
+* If the user has lived past any given planet's life expectency:
+   * Input: user's age (ex:35).
+   * Output: return number of years lived past expectency.
 
 
 ## Setup/Installation Requirements
