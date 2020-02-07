@@ -28,7 +28,7 @@ _This is a webpage that allows the user to input a number and give back a list o
       * Venus age fails
    * Output: age in Venus years
       * Test Faliure: deep equality, .toEqual(1)
-      * Test Pass: Users age is calculated to Venus time (35).
+      * Test Pass: Users age is calculated to Venus time (35 y/o).
    * Refactor: 
       * Return Venus age with Math.floor.
 
@@ -37,7 +37,7 @@ _This is a webpage that allows the user to input a number and give back a list o
       * Mercury age fails
    * Output: age in Venus years
       * Test Faliure: deep equality, .toEqual(1)
-      * Test Pass: Users age is calculated to Mercury time (145).
+      * Test Pass: Users age is calculated to Mercury time (145 y/o).
    * Refactor: 
       * Return Mercury age with Math.floor.
 
@@ -46,10 +46,13 @@ _This is a webpage that allows the user to input a number and give back a list o
       * Mars test fails.
    * Output: age in Mars years.
       * Test Failure: deep equality, .toEqual(1)
-      * Test Pass: Users age is calculated to Mars time (18).
+      * Test Pass: Users age is calculated to Mars time (18 y/o).
 * A class which returns a human's age in...:
    * Input: user's age (ex:35).
-   * Output: age in Jupiter years
+      * Jupiter test fails.
+   * Output: age in Jupiter years.
+      * Test Failure: deep equality, .toEqual(1)
+      * Test Pass: Users age is calculated to Jupiter time (2 y/o).
 * Determine how long the user has left to live on each planet.
    * Input: users age (ex:35).
    * Output: age on each planet, and number of years left.
