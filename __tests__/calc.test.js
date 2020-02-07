@@ -28,6 +28,6 @@ describe ('User', () => {
 
   test ('should test the users age in Jupiter years', () => {
     const jupiter = newUser.calcJupiter();
-    expect(jupiter).toEqual(1);
+    expect(jupiter).toEqual(2);
   });
 });
