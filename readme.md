@@ -22,12 +22,31 @@ _This is a webpage that allows the user to input a number and give back a list o
       * Test Pass: Expected age input is stored as user's current age in Earth years.
    * Refactor:
       * Exclude method specifically pertaining to Earth years calculation. This is redundant as the user's initial input is their age on Earth. Future objects will be calculated against this.
+
 * A class which returns a human's age in...:
    * Input: user's age (ex:35).
+      * Venus age fails
    * Output: age in Venus years
+      * Test Faliure: deep equality, .toEqual(1)
+      * Test Pass: Users age is calculated to Venus time (35).
+   * Refactor: 
+      * Return Venus age with Math.floor.
+
 * A class which returns a human's age in...:
    * Input: user's age (ex:35).
-   * Output: age in Mars years
+      * Mercury age fails
+   * Output: age in Venus years
+      * Test Faliure: deep equality, .toEqual(1)
+      * Test Pass: Users age is calculated to Mercury time (145).
+   * Refactor: 
+      * Return Mercury age with Math.floor.
+
+* A class which returns a human's age in...:
+   * Input: user's age (ex:35).
+      * Mars test fails.
+   * Output: age in Mars years.
+      * Test Failure: deep equality, .toEqual(1)
+      * Test Pass: Users age is calculated to Mars time (18).
 * A class which returns a human's age in...:
    * Input: user's age (ex:35).
    * Output: age in Jupiter years
