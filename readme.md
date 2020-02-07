@@ -53,9 +53,21 @@ _This is a webpage that allows the user to input a number and give back a list o
    * Output: age in Jupiter years.
       * Test Failure: deep equality, .toEqual(1)
       * Test Pass: Users age is calculated to Jupiter time (2 y/o).
-* Determine how long the user has left to live on each planet.
+* Determine life-expectenecy on Earth.
    * Input: users age (ex:35).
-   * Output: age on each planet, and number of years left.
+   * Output: age on Earth, and number of years left.
+* Determine life-expectenecy on Venus.
+   * Input: users age (ex:35).
+   * Output: age on Venus, and number of years left.
+* Determine life-expectenecy on Mercury.
+   * Input: users age (ex:35).
+   * Output: age on Mercury, and number of years left.
+* Determine life-expectenecy on Mars.
+   * Input: users age (ex:35).
+   * Output: age on Mars, and number of years left.
+* Determine life-expectenecy on Jupiter.
+   * Input: users age (ex:35).
+   * Output: age on Jupiter, and number of years left.
 * If the user has lived past any given planet's life expectency:
    * Input: user's age (ex:35).
    * Output: return number of years lived past expectency.
