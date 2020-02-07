@@ -15,7 +15,13 @@ _This is a webpage that allows the user to input a number and give back a list o
 
 * A class which returns a human's age in...:
    * Input: user's age (ex:35).
+      * Initial test fails
+      * Earth years age test passes
    * Output: age in Mercury years
+      * Test Failure: age not defined
+      * Test Pass: Expected age input is stored as user's current age in Earth years.
+   * Refactor:
+      * Exclude method specifically pertaining to Earth years calculation. This is redundant as the user's initial input is their age on Earth. Future objects will be calculated against this.
 * A class which returns a human's age in...:
    * Input: user's age (ex:35).
    * Output: age in Venus years

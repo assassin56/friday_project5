@@ -1,2 +1,5 @@
-// Your back-end will reside here. //
-
+export class User {
+  constructor(age) {
+    this.age = age;
+  } 
+}
