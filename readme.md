@@ -85,10 +85,10 @@ _This is a webpage that allows the user to input a number and give back a list o
 
 * Determine life-expectenecy on Jupiter.
    * Input: users age (ex:35).
+      * Jupiter LE test fails
    * Output: age on Jupiter, and number of years left.
-* If the user has lived past any given planet's life expectency:
-   * Input: user's age (ex:35).
-   * Output: return number of years lived past expectency.
+      * Test Failure: deep equality, .toEqual(1)
+      * Test Pass: Users time left, or time past, is calculated to ().
 
 
 ## Setup/Installation Requirements
