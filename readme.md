@@ -47,24 +47,35 @@ _This is a webpage that allows the user to input a number and give back a list o
    * Output: age in Mars years.
       * Test Failure: deep equality, .toEqual(1)
       * Test Pass: Users age is calculated to Mars time (18 y/o).
+
 * A class which returns a human's age in...:
    * Input: user's age (ex:35).
       * Jupiter test fails.
    * Output: age in Jupiter years.
       * Test Failure: deep equality, .toEqual(1)
       * Test Pass: Users age is calculated to Jupiter time (2 y/o).
+
 * Determine life-expectenecy on Earth.
    * Input: users age (ex:35).
       * Earth LE test fails.
    * Output: age on Earth, and number of years left.
       * Test Failure: deep equality, .toEqual(1)
-      * Test Pass:
+      * Test Pass: Users time left, or time past, is calculated to (37).
+
 * Determine life-expectenecy on Venus.
    * Input: users age (ex:35).
+      * Venus LE test fails.
    * Output: age on Venus, and number of years left.
+      * Test Failure: deep equality, .toEqual(1)
+      * Test Pass: Users time left, or time past, is calculated to (60).
+
 * Determine life-expectenecy on Mercury.
    * Input: users age (ex:35).
+      * Mercury LE test fails
    * Output: age on Mercury, and number of years left.
+      * Test Failure: deep equality, .toEqual(1)
+      * Test Pass: Users time left, or time past, is calculated to (155).
+
 * Determine life-expectenecy on Mars.
    * Input: users age (ex:35).
    * Output: age on Mars, and number of years left.
