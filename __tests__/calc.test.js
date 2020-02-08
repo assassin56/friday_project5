@@ -31,8 +31,18 @@ describe ('User', () => {
     expect(jupiter).toEqual(2);
   });
 
-  test ('should test for a life expentency variable on Earth', () => {
-    const earth = newUser.earthLE();
-    expect(earth).toEqual(1);
+  test ('should test forthe users life expentency on Earth', () => {
+    const earthLE = newUser.earthLE();
+    expect(earthLE).toEqual(37);
+  });
+
+  test ('should test forthe users life expentency on Venus', () => {
+    const venusLE = newUser.venusLE();
+    expect(venusLE).toEqual(60);
+  });
+
+  test ('should test forthe users life expentency on Mercury', () => {
+    const mercuryLE = newUser.mercuryLE();
+    expect(mercuryLE).toEqual(155);
   });
 });
