@@ -62,4 +62,16 @@ export class User {
       return numYearsPast;
     }
   }
+
+  marsLE() {
+    const ageMars = this.calcMars();
+    const lifeExp = 38;
+    let numYearsLeft = (lifeExp - ageMars);
+    let numYearsPast = (-ageMars + lifeExp);
+    if (ageMars <= lifeExp) {
+      return numYearsLeft;
+    } else {
+      return numYearsPast;
+    }
+  }
 }
