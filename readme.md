@@ -1,15 +1,19 @@
-# _Arrays and Looping_
+# _Super Galactic Calculator_
 
-#### _This is a almost running webpage, as of 1/24/20._
+#### _This is a running webpage, as of 2/7/20._
 
 #### By _**Antonio Cruz**_
 
 ## Description
 
+_Link to github repo_
+
+_https://github.com/assassin56/friday_project5_
+
 _Link to gh-pages branch_
 _https://assassin56.github.io/friday_project3/_
 
-_This is a webpage that allows the user to input a number and give back a list of numbers from 0 to their input. The 1s, 2s, and 3s are to be replaced with silly phrases that would imitate a robot._
+_This is a calculator that determines, based on one's age, their actual age on other planets. Among this interesting fact, it will also tell you your life expectency on those planets, and whether or not you surpassed that value._
 
 ## SPEC Sheet
 
@@ -93,7 +97,7 @@ _This is a webpage that allows the user to input a number and give back a list o
 
 ## Setup/Installation Requirements
 
-* Click the link above under the "Descriptions" tab. This should lead you directly to the webpage.
+* 
 
 ## Known Bugs
 
@@ -113,6 +117,10 @@ _codrocks.cruz3@gmail.com_
 * _Git_
 * _JavaScript_
 * _JQuery_
+* _Jest_
+* _Webpack_
+* _EsLint_
+
 
 ### License
 
