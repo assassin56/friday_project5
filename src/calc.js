@@ -74,4 +74,16 @@ export class User {
       return numYearsPast;
     }
   }
+  
+  jupiterLE() {
+    const ageJupiter = this.calcJupiter();
+    const lifeExp = 6;
+    let numYearsLeft = (lifeExp - ageJupiter);
+    let numYearsPast = (-ageJupiter + lifeExp);
+    if (ageJupiter <= lifeExp) {
+      return numYearsLeft;
+    } else {
+      return numYearsPast;
+    }
+  }
 }
