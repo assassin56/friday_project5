@@ -45,4 +45,14 @@ describe ('User', () => {
     const mercuryLE = newUser.mercuryLE();
     expect(mercuryLE).toEqual(155);
   });
+
+  test ('should test forthe users life expentency on Mars', () => {
+    const marsLE = newUser.marsLE();
+    expect(marsLE).toEqual(20);
+  });
+
+  test ('should test forthe users life expentency on Jupiter', () => {
+    const jupiterLE = newUser.mercuryLE();
+    expect(mercuryLE).toEqual(155);
+  });
 });
