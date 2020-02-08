@@ -52,7 +52,7 @@ describe ('User', () => {
   });
 
   test ('should test forthe users life expentency on Jupiter', () => {
-    const jupiterLE = newUser.mercuryLE();
-    expect(mercuryLE).toEqual(155);
+    const jupiterLE = newUser.jupiterLE();
+    expect(jupiterLE).toEqual(4);
   });
 });
