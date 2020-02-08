@@ -78,7 +78,11 @@ _This is a webpage that allows the user to input a number and give back a list o
 
 * Determine life-expectenecy on Mars.
    * Input: users age (ex:35).
+      * Mars LE test fails.
    * Output: age on Mars, and number of years left.
+      * Test Failure: deep equality, .toEqual(1)
+      * Test Pass: Users time left, or time past, is calculated to (20).
+
 * Determine life-expectenecy on Jupiter.
    * Input: users age (ex:35).
    * Output: age on Jupiter, and number of years left.
