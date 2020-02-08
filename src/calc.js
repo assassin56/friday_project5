@@ -38,4 +38,28 @@ export class User {
       return numYearsPast;
     }
   }
+
+  venusLE() {
+    const ageVenus = this.calcVenus();
+    const lifeExp = 116;
+    let numYearsLeft = (lifeExp - ageVenus);
+    let numYearsPast = (-ageVenus + lifeExp);
+    if (ageVenus <= lifeExp) {
+      return numYearsLeft;
+    } else {
+      return numYearsPast;
+    }
+  }
+
+  mercuryLE() {
+    const ageMercury = this.calcMercury();
+    const lifeExp = 300;
+    let numYearsLeft = (lifeExp - ageMercury);
+    let numYearsPast = (-ageMercury + lifeExp);
+    if (ageMercury <= lifeExp) {
+      return numYearsLeft;
+    } else {
+      return numYearsPast;
+    }
+  }
 }
