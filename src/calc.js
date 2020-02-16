@@ -1,33 +1,37 @@
 export class User {
-  constructor(age) {
+  constructor(age, venusAge, mercuryAge, marsAge, jupiterAge) {
     this.age = age;
+    this.venusAge = venusAge;
+    this.mercuryAge = mercuryAge;
+    this.marsAge = marsAge;
+    this.jupiterAge = jupiterAge;
+    this.earthLimit = 72;
   }
   
   calcVenus() {
-    let venus = Math.floor(this.age/.62);
-    return venus;
+    this.venusAge = Math.floor(this.age/.62);
+    return this.venusAge;
   }
 
   calcMercury() {
-    let mercury = Math.floor(this.age/.24);
-    return mercury;
+    this.mercuryAge = Math.floor(this.age/.24);
+    return this.mercuryAge;
   }
 
   calcMars() {
-    let mars = Math.floor(this.age/1.88);
-    return mars;
+    this.marsAge = Math.floor(this.age/1.88);
+    return this.marsAge;
   }
 
   calcJupiter() {
-    let jupiter = Math.floor(this.age/11.86);
-    return jupiter;
+    this.jupiterAge = Math.floor(this.age/11.86);
+    return this.jupiterAge;
   }
 
   earthLE() {
-    const lifeExp = 72;
-    let numYearsLeft = (lifeExp - this.age);
-    let numYearsPast = (-this.age + lifeExp);
-    if (currentAge <= lifeExp) {
+    let numYearsLeft = (this.earthLimit - this.age);
+    let numYearsPast = (-this.age + this.earthLimit);
+    if (this.age <= this.earthLimit) {
       return numYearsLeft;
     } else {
       return numYearsPast;
@@ -35,11 +39,10 @@ export class User {
   }
 
   venusLE() {
-    const ageVenus = this.calcVenus();
-    const lifeExp = 116;
-    let numYearsLeft = (lifeExp - ageVenus);
-    let numYearsPast = (-ageVenus + lifeExp);
-    if (ageVenus <= lifeExp) {
+    const lifeExp = 116; 
+    let numYearsLeft = (lifeExp - this.venusAge);
+    let numYearsPast = (-this.venusAge + lifeExp);
+    if (this.venusAge <= lifeExp) {
       return numYearsLeft;
     } else {
       return numYearsPast;
@@ -47,11 +50,10 @@ export class User {
   }
 
   mercuryLE() {
-    const ageMercury = this.calcMercury();
     const lifeExp = 300;
-    let numYearsLeft = (lifeExp - ageMercury);
-    let numYearsPast = (-ageMercury + lifeExp);
-    if (ageMercury <= lifeExp) {
+    let numYearsLeft = (lifeExp - this.mercuryAge);
+    let numYearsPast = (-this.mercuryAge + lifeExp);
+    if (this.mercuryAge <= lifeExp) {
       return numYearsLeft;
     } else {
       return numYearsPast;
@@ -59,11 +61,10 @@ export class User {
   }
 
   marsLE() {
-    const ageMars = this.calcMars();
     const lifeExp = 38;
-    let numYearsLeft = (lifeExp - ageMars);
-    let numYearsPast = (-ageMars + lifeExp);
-    if (ageMars <= lifeExp) {
+    let numYearsLeft = (lifeExp - this.marsAge);
+    let numYearsPast = (-this.marsAge + lifeExp);
+    if (this.marsAge <= lifeExp) {
       return numYearsLeft;
     } else {
       return numYearsPast;
@@ -71,11 +72,10 @@ export class User {
   }
   
   jupiterLE() {
-    const ageJupiter = this.calcJupiter();
     const lifeExp = 6;
-    let numYearsLeft = (lifeExp - ageJupiter);
-    let numYearsPast = (-ageJupiter + lifeExp);
-    if (ageJupiter <= lifeExp) {
+    let numYearsLeft = (lifeExp - this.jupiterAge);
+    let numYearsPast = (-this.jupiterAge + lifeExp);
+    if (this.jupiterAge <= lifeExp) {
       return numYearsLeft;
     } else {
       return numYearsPast;

@@ -27,12 +27,12 @@ describe ('User', () => {
     expect(jupiter).toEqual(2);
   });
 
-  test ('should test forthe users life expentency on Earth', () => {
+  test ('should test for the users life expentency on Earth', () => {
     const earthLE = newUser.earthLE();
     expect(earthLE).toEqual(37);
   });
 
-  test ('should test forthe users life expentency on Venus', () => {
+  test ('should test for the users life expentency on Venus', () => {
     const venusLE = newUser.venusLE();
     expect(venusLE).toEqual(60);
   });
