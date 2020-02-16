@@ -1,11 +1,7 @@
 import { User } from './../src/calc.js';
 
 describe ('User', () => {
-  let newUser;
-  
-  beforeEach( () => {
-    newUser = new User(35);
-  });
+  let newUser = new User(35); 
 
   test ('should test that the user has entered a number stores as their age in Earth years.', () => {
     expect(newUser.age).toEqual(35);
@@ -41,17 +37,17 @@ describe ('User', () => {
     expect(venusLE).toEqual(60);
   });
 
-  test ('should test forthe users life expentency on Mercury', () => {
+  test ('should test for the users life expentency on Mercury', () => {
     const mercuryLE = newUser.mercuryLE();
     expect(mercuryLE).toEqual(155);
   });
 
-  test ('should test forthe users life expentency on Mars', () => {
+  test ('should test for the users life expentency on Mars', () => {
     const marsLE = newUser.marsLE();
     expect(marsLE).toEqual(20);
   });
 
-  test ('should test forthe users life expentency on Jupiter', () => {
+  test ('should test for the users life expentency on Jupiter', () => {
     const jupiterLE = newUser.jupiterLE();
     expect(jupiterLE).toEqual(4);
   });

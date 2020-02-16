@@ -11,7 +11,7 @@ _Link to github repo_
 _https://github.com/assassin56/friday_project5_
 
 _Link to gh-pages branch_
-_https://assassin56.github.io/friday_project3/_
+_https://assassin56.github.io/friday_project5/_
 
 _This is a calculator that determines, based on one's age, their actual age on other planets. Among this interesting fact, it will also tell you your life expectency on those planets, and whether or not you surpassed that value._
 

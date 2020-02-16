@@ -4,34 +4,29 @@ export class User {
   }
   
   calcVenus() {
-    let currentAge = this.age;
-    let venus = Math.floor(currentAge/.62);
+    let venus = Math.floor(this.age/.62);
     return venus;
   }
 
   calcMercury() {
-    let currentAge = this.age;
-    let mercury = Math.floor(currentAge/.24);
+    let mercury = Math.floor(this.age/.24);
     return mercury;
   }
 
   calcMars() {
-    let currentAge = this.age;
-    let mars = Math.floor(currentAge/1.88);
+    let mars = Math.floor(this.age/1.88);
     return mars;
   }
 
   calcJupiter() {
-    let currentAge = this.age;
-    let jupiter = Math.floor(currentAge/11.86);
+    let jupiter = Math.floor(this.age/11.86);
     return jupiter;
   }
 
   earthLE() {
-    let currentAge = this.age;
     const lifeExp = 72;
-    let numYearsLeft = (lifeExp - currentAge);
-    let numYearsPast = (-currentAge + lifeExp);
+    let numYearsLeft = (lifeExp - this.age);
+    let numYearsPast = (-this.age + lifeExp);
     if (currentAge <= lifeExp) {
       return numYearsLeft;
     } else {
