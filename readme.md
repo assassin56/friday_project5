@@ -17,82 +17,45 @@ _This is a calculator that determines, based on one's age, their actual age on o
 
 ## SPEC Sheet
 
-* A class which returns a human's age in...:
-   * Input: user's age (ex:35).
-      * Initial test fails
-      * Earth years age test passes
-   * Output: age in Mercury years
-      * Test Failure: age not defined
-      * Test Pass: Expected age input is stored as user's current age in Earth years.
-   * Refactor:
-      * Exclude method specifically pertaining to Earth years calculation. This is redundant as the user's initial input is their age on Earth. Future objects will be calculated against this.
+* A method which returns a human's age in Earth years:
+   * Input: user's age (35).
+   * Output: age in Earth years (35).
 
-* A class which returns a human's age in...:
-   * Input: user's age (ex:35).
-      * Venus age fails
-   * Output: age in Venus years
-      * Test Faliure: deep equality, .toEqual(1)
-      * Test Pass: Users age is calculated to Venus time (35 y/o).
-   * Refactor: 
-      * Return Venus age with Math.floor.
+* A method which returns a human's age in Venus years:
+   * Input: user's age (35).
+   * Output: age in Venus years (56).
 
-* A class which returns a human's age in...:
-   * Input: user's age (ex:35).
-      * Mercury age fails
-   * Output: age in Venus years
-      * Test Faliure: deep equality, .toEqual(1)
-      * Test Pass: Users age is calculated to Mercury time (145 y/o).
-   * Refactor: 
-      * Return Mercury age with Math.floor.
+* A method which returns a human's age in Mercury years:
+   * Input: user's age (35).
+   * Output: age in Mercury years (145).
 
-* A class which returns a human's age in...:
-   * Input: user's age (ex:35).
-      * Mars test fails.
-   * Output: age in Mars years.
-      * Test Failure: deep equality, .toEqual(1)
-      * Test Pass: Users age is calculated to Mars time (18 y/o).
+* A method which returns a human's age in Mars years:
+   * Input: user's age (35).
+   * Output: age in Mars years (18)
 
-* A class which returns a human's age in...:
-   * Input: user's age (ex:35).
-      * Jupiter test fails.
-   * Output: age in Jupiter years.
-      * Test Failure: deep equality, .toEqual(1)
-      * Test Pass: Users age is calculated to Jupiter time (2 y/o).
+* A method which returns a human's age in Jupiter years:
+   * Input: user's age (35).
+   * Output: age in Jupiter years (2).
 
 * Determine life-expectenecy on Earth.
-   * Input: users age (ex:35).
-      * Earth LE test fails.
-   * Output: age on Earth, and number of years left.
-      * Test Failure: deep equality, .toEqual(1)
-      * Test Pass: Users time left, or time past, is calculated to (37).
+   * Input: users age (35).
+   * Output: age on Earth, and number of years left (37).
 
 * Determine life-expectenecy on Venus.
-   * Input: users age (ex:35).
-      * Venus LE test fails.
-   * Output: age on Venus, and number of years left.
-      * Test Failure: deep equality, .toEqual(1)
-      * Test Pass: Users time left, or time past, is calculated to (60).
+   * Input: users age (35).
+   * Output: age on Venus, and number of years left (60).
 
 * Determine life-expectenecy on Mercury.
-   * Input: users age (ex:35).
-      * Mercury LE test fails
-   * Output: age on Mercury, and number of years left.
-      * Test Failure: deep equality, .toEqual(1)
-      * Test Pass: Users time left, or time past, is calculated to (155).
+   * Input: users age (35).
+   * Output: age on Mercury, and number of years left (155).
 
 * Determine life-expectenecy on Mars.
-   * Input: users age (ex:35).
-      * Mars LE test fails.
-   * Output: age on Mars, and number of years left.
-      * Test Failure: deep equality, .toEqual(1)
-      * Test Pass: Users time left, or time past, is calculated to (20).
+   * Input: users age (35).
+   * Output: age on Mars, and number of years left (20).
 
 * Determine life-expectenecy on Jupiter.
-   * Input: users age (ex:35).
-      * Jupiter LE test fails
-   * Output: age on Jupiter, and number of years left.
-      * Test Failure: deep equality, .toEqual(1)
-      * Test Pass: Users time left, or time past, is calculated to ().
+   * Input: users age (35).
+   * Output: age on Jupiter, and number of years left (4).
 
 
 ## Setup/Installation Requirements

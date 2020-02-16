@@ -12,7 +12,7 @@ describe ('User', () => {
     expect(venus).toEqual(56);
   });
 
-  test ('should test the users age in Venus years', () => {
+  test ('should test the users age in Mercury years', () => {
     const mercury = newUser.calcMercury();
     expect(mercury).toEqual(145);
   });
