@@ -8,33 +8,33 @@ describe ('User', () => {
   });
 
   test ('should test the users age in Venus years', () => {
-    const venus = newUser.calcVenus();
-    expect(venus).toEqual(56);
+    newUser.calcVenus();
+    expect(newUser.venusAge).toEqual(56);
   });
 
   test ('should test the users age in Mercury years', () => {
-    const mercury = newUser.calcMercury();
-    expect(mercury).toEqual(145);
+    newUser.calcMercury();
+    expect(newUser.mercuryAge).toEqual(145);
   });
 
   test ('should test the users age in Mars years', () => {
-    const mars = newUser.calcMars();
-    expect(mars).toEqual(18);
+    newUser.calcMars();
+    expect(newUser.marsAge).toEqual(18);
   });
 
   test ('should test the users age in Jupiter years', () => {
-    const jupiter = newUser.calcJupiter();
-    expect(jupiter).toEqual(2);
+    newUser.calcJupiter();
+    expect(newUser.jupiterAge).toEqual(2);
   });
 
   test ('should test for the users life expentency on Earth', () => {
-    const earthLE = newUser.earthLE();
-    expect(earthLE).toEqual(37);
+    newUser.earthLE();
+    expect(newUser.numYearsLeftEarth).toEqual(37);
   });
 
   test ('should test for the users life expentency on Venus', () => {
-    const venusLE = newUser.venusLE();
-    expect(venusLE).toEqual(60);
+    newUser.venusLE();
+    expect(newUser.numYearsLeft).toEqual(60);
   });
 
   test ('should test for the users life expentency on Mercury', () => {

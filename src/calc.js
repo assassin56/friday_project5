@@ -1,41 +1,39 @@
 export class User {
-  constructor(age, venusAge, mercuryAge, marsAge, jupiterAge) {
+  constructor(age, venusAge, mercuryAge, marsAge, jupiterAge, numYearsLeftEarth, numYearsPastEarth, numYearsLeftVenus, numYearsPastVenus, numYearsPastVenus, numYearsLeftMercury, numYearsPastMercury, numYearsLeftMars, numYearsPastMars, ) {
     this.age = age;
     this.venusAge = venusAge;
     this.mercuryAge = mercuryAge;
     this.marsAge = marsAge;
     this.jupiterAge = jupiterAge;
     this.earthLimit = 72;
+    this.numYearsLeftEarth = numYearsLeftEarth;
   }
   
   calcVenus() {
     this.venusAge = Math.floor(this.age/.62);
-    return this.venusAge;
   }
 
   calcMercury() {
     this.mercuryAge = Math.floor(this.age/.24);
-    return this.mercuryAge;
   }
 
   calcMars() {
     this.marsAge = Math.floor(this.age/1.88);
-    return this.marsAge;
   }
 
   calcJupiter() {
     this.jupiterAge = Math.floor(this.age/11.86);
-    return this.jupiterAge;
   }
 
   earthLE() {
-    let numYearsLeft = (this.earthLimit - this.age);
+    this.numYearsLeftEarth = (this.earthLimit - this.age);
+    console.log(this.numYearsLeftEarth);
     let numYearsPast = (-this.age + this.earthLimit);
-    if (this.age <= this.earthLimit) {
-      return numYearsLeft;
-    } else {
-      return numYearsPast;
-    }
+    // if (this.age <= this.earthLimit) {
+    //   return numYearsLeft;
+    // } else {
+    //   return numYearsPast;
+    // }
   }
 
   venusLE() {
