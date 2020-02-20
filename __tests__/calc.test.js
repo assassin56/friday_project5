@@ -1,11 +1,8 @@
 import { User } from './../src/calc.js';
 
-
-// Pass the "User" class to a new object //
 describe ('User', () => {
   let newUser = new User(); 
 
-  // Test for the property in the constructor. Check that 35 is passed. //
   test ('should test that the users input stores as their age in Earth years.', () => {
     expect(newUser.age).toEqual(35);
   });
