@@ -1,6 +1,6 @@
 export class User {
-  constructor() {
-    this.age = 35;
+  constructor(age) {
+    this.age = age;
     this.earthLimit = 72;
   }
   
