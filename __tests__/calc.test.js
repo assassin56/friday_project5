@@ -1,6 +1,6 @@
 import { User } from './../src/calc.js';
 
-// code handles ONLY up to LE ages. Must write more tests for PAST and OF THAT LE. //
+// Test for a person younger than the Life Expectency on each planet //
 describe ('User', () => {
   let youngPerson = new User(35); 
 
@@ -49,51 +49,100 @@ describe ('User', () => {
   });
 });
 
-// Test for a person older than that life expectency of each planet //
+// Test for a person older than that Life Expectency of each planet //
 describe ('User', () => {
-  let youngPerson = new User(90); 
+  let olderPerson = new User(90); 
 
   test ('should test that the users input stores as their age in Earth years.', () => {
-    expect(youngPerson.age).toEqual(90);
+    expect(olderPerson.age).toEqual(90);
   });
 
   test ('should test for the users age in Venus years', () => {
-    youngPerson.calcVenus();
-    expect(youngPerson.venusAge).toEqual(145);
+    olderPerson.calcVenus();
+    expect(olderPerson.venusAge).toEqual(145);
   });
 
   test ('should test for the users age in Mercury years', () => {
-    youngPerson.calcMercury();
-    expect(youngPerson.mercuryAge).toEqual(375);
+    olderPerson.calcMercury();
+    expect(olderPerson.mercuryAge).toEqual(375);
   });
 
   test ('should test for the users age in Mars years', () => {
-    youngPerson.calcMars();
-    expect(youngPerson.marsAge).toEqual(47);
+    olderPerson.calcMars();
+    expect(olderPerson.marsAge).toEqual(47);
   });
 
   test ('should test the users age in Jupiter years', () => {
-    youngPerson.calcJupiter();
-    expect(youngPerson.jupiterAge).toEqual(7);
+    olderPerson.calcJupiter();
+    expect(olderPerson.jupiterAge).toEqual(7);
   });
 
   test ('should test for the users age value past the LE on Earth', () => {
-    expect(youngPerson.earthLE()).toEqual(18);
+    expect(olderPerson.earthLE()).toEqual(18);
   });
 
   test ('should test for the users age value past the LE on Venus', () => {
-    expect(youngPerson.venusLE()).toEqual(29);
+    expect(olderPerson.venusLE()).toEqual(29);
   });
 
   test ('should test for the users age value past the LE on Mercury', () => {
-    expect(youngPerson.mercuryLE()).toEqual(75);
+    expect(olderPerson.mercuryLE()).toEqual(75);
   });
 
   test('should test for the users age value past the LE on Mars', () => {
-    expect(youngPerson.marsLE()).toEqual(9)
+    expect(olderPerson.marsLE()).toEqual(9)
   });
 
   test('should test for the users age value past the LE on Jupiter', () => {
-    expect(youngPerson.jupiterLE()).toEqual(1);
+    expect(olderPerson.jupiterLE()).toEqual(1);
+  });
+});
+
+// Test for a person who happens to be the same age as the LE on each planet //
+describe ('User', () => {
+  let atTheCusp = new User(72); 
+
+  test ('should test that the users input stores as their age in Earth years.', () => {
+    expect(atTheCusp.age).toEqual(72);
+  });
+
+  test ('should test for the users age in Venus years', () => {
+    atTheCusp.calcVenus();
+    expect(atTheCusp.venusAge).toEqual(116);
+  });
+
+  test ('should test for the users age in Mercury years', () => {
+    atTheCusp.calcMercury();
+    expect(atTheCusp.mercuryAge).toEqual(300);
+  });
+
+  test ('should test for the users age in Mars years', () => {
+    atTheCusp.calcMars();
+    expect(atTheCusp.marsAge).toEqual(38);
+  });
+
+  test ('should test the users age in Jupiter years', () => {
+    atTheCusp.calcJupiter();
+    expect(atTheCusp.jupiterAge).toEqual(6);
+  });
+
+  test ('should test for the users age value as the same as the LE on Earth', () => {
+    expect(atTheCusp.earthLE()).toEqual(0);
+  });
+
+  test ('should test for the users age value as the same as the LE on Venus', () => {
+    expect(atTheCusp.venusLE()).toEqual(0);
+  });
+
+  test ('should test for the users age value as the same as the LE on Mercury', () => {
+    expect(atTheCusp.mercuryLE()).toEqual(0);
+  });
+
+  test('should test for the users age value as the same as the LE on Mars', () => {
+    expect(atTheCusp.marsLE()).toEqual(0)
+  });
+
+  test('should test for the users age value as the same as the LE on Jupiter', () => {
+    expect(atTheCusp.jupiterLE()).toEqual(0);
   });
 });
