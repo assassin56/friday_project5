@@ -1,6 +1,6 @@
 import { User } from './../src/calc.js';
 
-// Test for a person younger than the Life Expectency on each planet //
+// Test for a person younger than the Life Expectancy on each planet //
 describe ('User', () => {
   let youngPerson = new User(35); 
 
@@ -49,7 +49,7 @@ describe ('User', () => {
   });
 });
 
-// Test for a person older than that Life Expectency of each planet //
+// Test for a person older than that Life Expectancy of each planet //
 describe ('User', () => {
   let olderPerson = new User(90); 
 
