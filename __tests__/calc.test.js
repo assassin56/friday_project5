@@ -1,5 +1,6 @@
 import { User } from './../src/calc.js';
 
+// code handles ONLY up to LE ages. Must write more tests for PAST and OF THAT LE. //
 describe ('User', () => {
   let youngPerson = new User(35); 
 
@@ -7,10 +8,10 @@ describe ('User', () => {
   //   expect(youngPerson.age).toEqual(35);
   // });
 
-  // test ('should test for the users age in Venus years', () => {
-  //   youngPerson.calcVenus();
-  //   expect(youngPerson.venusAge).toEqual(56);
-  // });
+  test ('should test for the users age in Venus years', () => {
+    youngPerson.calcVenus();
+    expect(youngPerson.venusAge).toEqual(56);
+  });
 
   // test ('should test for the users age in Mercury years', () => {
   //   youngPerson.calcMercury();
@@ -27,52 +28,11 @@ describe ('User', () => {
   //   expect(youngPerson.jupiterAge).toEqual(2);
   // });
 
-  test ('should test for the users life expentency on Earth', () => {
-    expect(youngPerson.earthLE()).toEqual(1);
+  // test ('should test for the users time left on Earth', () => {
+  //   expect(youngPerson.earthLE()).toEqual(37);
+  // });
+
+  test ('should test for the users time left on Venus', () => {
+    expect(youngPerson.venusLE()).toEqual(60);
   });
-
-  // test ('should test for the number of years the user has lived past the life expectency on Earth', () => {
-  //   youngPerson.earthLE();
-  //   expect(youngPerson.numYearsPast).toEqual(37);
-  // });
-
-  // test ('should test for the users life expentency on Venus', () => {
-  //   newUser.venusLE();
-  //   expect(newUser.numYearsLeft).toEqual(60);
-  // });
-
-  // test('should test for the number of years the user has lived past life expectency on Venus', () => {
-  //   newUser.venusLE();
-  //   expect(newUser.numYearsPast).toEqual(60);
-  // });
-
-  // test ('should test the users life expentency on Mercury', () => {
-  //   newUser.mercuryLE();
-  //   expect(newUser.numYearsLeft).toEqual(155);
-  // });
-
-  // test ('should test for the number of years the user has lived past the life expectency on Mercury', () => {
-  //   newUser.mercuryLE();
-  //   expect(newUser.numYearsPast).toEqual(155);
-  // });
-
-  // test ('should test for the users life expentency on Mars', () => {
-  //   newUser.marsLE();
-  //   expect(newUser.numYearsLeft).toEqual(20);
-  // });
-
-  // test ('should test for the number of years the user has lived past the life expectency on Mars.', () => {
-  //   newUser.marsLE();
-  //   expect(newUser.numYearsLeft).toEqual(20);
-  // });
-
-  // test ('should test for the users life expentency on Jupiter', () => {
-  //   newUser.jupiterLE();
-  //   expect(newUser.numYearsLeft).toEqual(4);
-  // });
-
-  // test('should test for the number of years the user has lived past the life expectency on Jupiter', () => {
-  //   newUser.jupiterLE();
-  //   expect(newUser.numYearsPast).toEqual(4);
-  // });
 });

@@ -33,11 +33,19 @@ export class User {
     }
   }
 
-  // venusLE() {
-  //   const lifeExp = 116; 
-  //   this.numYearsLeft = (lifeExp - this.venusAge);
-  //   this.numYearsPast = (-this.venusAge + lifeExp);
-  // }
+  venusLE() {
+    const lifeExp = 116; 
+    if (this.venusAge === lifeExp) {
+      let variedTime = (this.venusAge - lifeExp);
+      return variedTime;
+    } else if (this.venusAge > lifeExp) {
+      let variedTime = (this.venusAge - lifeExp);
+      return variedTime;
+    } else if (this.venusAge < lifeExp) {
+      let variedTime = (lifeExp - this.venusAge);
+      return variedTime;
+    }
+  }
 
   // mercuryLE() {
   //   const lifeExp = 300;
