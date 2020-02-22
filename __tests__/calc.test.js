@@ -13,20 +13,20 @@ describe ('User', () => {
   //   expect(youngPerson.venusAge).toEqual(56);
   // });
 
-  test ('should test for the users age in Mercury years', () => {
-    youngPerson.calcMercury();
-    expect(youngPerson.mercuryAge).toEqual(145);
-  });
+  // test ('should test for the users age in Mercury years', () => {
+  //   youngPerson.calcMercury();
+  //   expect(youngPerson.mercuryAge).toEqual(145);
+  // });
 
   // test ('should test for the users age in Mars years', () => {
   //   youngPerson.calcMars();
   //   expect(youngPerson.marsAge).toEqual(18);
   // });
 
-  // test ('should test the users age in Jupiter years', () => {
-  //   youngPerson.calcJupiter();
-  //   expect(youngPerson.jupiterAge).toEqual(2);
-  // });
+  test ('should test the users age in Jupiter years', () => {
+    youngPerson.calcJupiter();
+    expect(youngPerson.jupiterAge).toEqual(2);
+  });
 
   // test ('should test for the users time left on Earth', () => {
   //   expect(youngPerson.earthLE()).toEqual(37);
@@ -36,7 +36,15 @@ describe ('User', () => {
   //   expect(youngPerson.venusLE()).toEqual(60);
   // });
 
-  test ('should test for the users time left on Mercury', () => {
-    expect(youngPerson.mercuryLE()).toEqual(155);
+  // test ('should test for the users time left on Mercury', () => {
+  //   expect(youngPerson.mercuryLE()).toEqual(155);
+  // });
+
+  // test('should test for the users time left on Mercury', () => {
+  //   expect(youngPerson.marsLE()).toEqual(20)
+  // });
+
+  test('should test for the users time left on Mercury', () => {
+    expect(youngPerson.jupiterLE()).toEqual(4);
   });
 });

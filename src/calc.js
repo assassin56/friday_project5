@@ -61,15 +61,31 @@ export class User {
     }
   }
 
-  // marsLE() {
-  //   const lifeExp = 38;
-  //   this.numYearsLeft = (lifeExp - this.marsAge);
-  //   this.numYearsPast = (-this.marsAge + lifeExp);
-  // }
+  marsLE() {
+    const lifeExp = 38;
+    if (this.marsAge === lifeExp) {
+      let variedTime = (this.marsAge - lifeExp);
+      return variedTime;
+    } else if (this.marsAge > lifeExp) {
+      let variedTime = (this.marsAge - lifeExp);
+      return variedTime;
+    } else if (this.marsAge < lifeExp) {
+      let variedTime = (lifeExp - this.marsAge);
+      return variedTime;
+    }
+  }
   
-  // jupiterLE() {
-  //   const lifeExp = 6;
-  //   this.numYearsLeft = (lifeExp - this.jupiterAge);
-  //   this.numYearsPast = (-this.jupiterAge + lifeExp);
-  // }
+  jupiterLE() {
+    const lifeExp = 6;
+    if (this.jupiterAge === lifeExp) {
+      let variedTime = (this.jupiterAge - lifeExp);
+      return variedTime;
+    } else if (this.jupiterAge > lifeExp) {
+      let variedTime = (this.jupiterAge - lifeExp);
+      return variedTime;
+    } else if (this.jupiterAge < lifeExp) {
+      let variedTime = (lifeExp - this.jupiterAge);
+      return variedTime;
+    }
+  }
 }
