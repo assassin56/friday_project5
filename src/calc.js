@@ -21,31 +21,39 @@ export class User {
   }
 
   earthLE() {
-    this.numYearsLeft = (this.earthLimit - this.age);
-    this.numYearsPast = (-this.age + this.earthLimit);
+    if (this.age === this.earthLimit) {
+      let variedTime = (this.age - this.earthLimit);
+      return variedTime;
+    } else if (this.age > this.earthLimit) {
+      let variedTime = (this.age - this.earthLimit);
+      return variedTime;
+    } else if (this.age < this.earthLimit) {
+      let variedTime = (this.earthLimit - this.age);
+      return variedTime;
+    }
   }
 
-  venusLE() {
-    const lifeExp = 116; 
-    this.numYearsLeft = (lifeExp - this.venusAge);
-    this.numYearsPast = (-this.venusAge + lifeExp);
-  }
+  // venusLE() {
+  //   const lifeExp = 116; 
+  //   this.numYearsLeft = (lifeExp - this.venusAge);
+  //   this.numYearsPast = (-this.venusAge + lifeExp);
+  // }
 
-  mercuryLE() {
-    const lifeExp = 300;
-    this.numYearsLeft = (lifeExp - this.mercuryAge);
-    this.numYearsPast = (-this.mercuryAge + lifeExp);
-  }
+  // mercuryLE() {
+  //   const lifeExp = 300;
+  //   this.numYearsLeft = (lifeExp - this.mercuryAge);
+  //   this.numYearsPast = (-this.mercuryAge + lifeExp);
+  // }
 
-  marsLE() {
-    const lifeExp = 38;
-    this.numYearsLeft = (lifeExp - this.marsAge);
-    this.numYearsPast = (-this.marsAge + lifeExp);
-  }
+  // marsLE() {
+  //   const lifeExp = 38;
+  //   this.numYearsLeft = (lifeExp - this.marsAge);
+  //   this.numYearsPast = (-this.marsAge + lifeExp);
+  // }
   
-  jupiterLE() {
-    const lifeExp = 6;
-    this.numYearsLeft = (lifeExp - this.jupiterAge);
-    this.numYearsPast = (-this.jupiterAge + lifeExp);
-  }
+  // jupiterLE() {
+  //   const lifeExp = 6;
+  //   this.numYearsLeft = (lifeExp - this.jupiterAge);
+  //   this.numYearsPast = (-this.jupiterAge + lifeExp);
+  // }
 }
