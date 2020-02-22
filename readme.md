@@ -17,7 +17,7 @@ _This is a calculator that determines, based on one's age, their actual age on o
 
 ## SPEC Sheet
 
-### Calculations of a Younger Person:
+### _Calculations of a Younger Person:_
 * A method which returns a human's age in Earth years:
    * Input: user's age (35).
    * Output: age in Earth years (35).
@@ -58,7 +58,7 @@ _This is a calculator that determines, based on one's age, their actual age on o
    * Input: users age (2).
    * Output: number of years left (4).
 
-### Calculations of an Older Person:
+### _Calculations of an Older Person:_
 * A method which returns a human's age in Earth years:
    * Input: user's age (90).
    * Output: age in Earth years (90).
@@ -99,7 +99,7 @@ _This is a calculator that determines, based on one's age, their actual age on o
    * Input: users age (90).
    * Output: number of years left (1).
 
-### Calculations of a person of the same age as the LE on each planet:
+### _Calculations of a person of the same age as the LE on each planet:_
 
 * A method which returns a human's age in Earth years:
    * Input: user's age (72).
