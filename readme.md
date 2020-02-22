@@ -17,6 +17,7 @@ _This is a calculator that determines, based on one's age, their actual age on o
 
 ## SPEC Sheet
 
+### Calculations of a Younger Person:
 * A method which returns a human's age in Earth years:
    * Input: user's age (35).
    * Output: age in Earth years (35).
@@ -37,26 +38,108 @@ _This is a calculator that determines, based on one's age, their actual age on o
    * Input: user's age (35).
    * Output: age in Jupiter years (2).
 
-* Determine life-expectenecy on Earth.
+* Determine the user's time left on Earth.
    * Input: users age (35).
-   * Output: age on Earth, and number of years left (37).
+   * Output: number of years left (37).
 
-* Determine life-expectenecy on Venus.
-   * Input: users age (35).
-   * Output: age on Venus, and number of years left (60).
+* Determine the user's time left on Venus.
+   * Input: users age (56).
+   * Output: number of years left (60).
 
-* Determine life-expectenecy on Mercury.
-   * Input: users age (35).
-   * Output: age on Mercury, and number of years left (155).
+* Determine the user's time left on Mercury.
+   * Input: users age (145).
+   * Output: number of years left (155).
 
-* Determine life-expectenecy on Mars.
-   * Input: users age (35).
-   * Output: age on Mars, and number of years left (20).
+* Determine the user's time left on Mars.
+   * Input: users age (18).
+   * Output: number of years left (20).
 
-* Determine life-expectenecy on Jupiter.
-   * Input: users age (35).
-   * Output: age on Jupiter, and number of years left (4).
+* Determine the user's time left on Jupiter.
+   * Input: users age (2).
+   * Output: number of years left (4).
 
+### Calculations of an Older Person:
+* A method which returns a human's age in Earth years:
+   * Input: user's age (90).
+   * Output: age in Earth years (90).
+
+* A method which returns a human's age in Venus years:
+   * Input: user's age (90).
+   * Output: age in Venus years (145).
+
+* A method which returns a human's age in Mercury years:
+   * Input: user's age (90).
+   * Output: age in Mercury years (375).
+
+* A method which returns a human's age in Mars years:
+   * Input: user's age (90).
+   * Output: age in Mars years (47).
+
+* A method which returns a human's age in Jupiter years:
+   * Input: user's age (90).
+   * Output: age in Jupiter years (7).
+
+* Determine the user's time lived passed LE on Earth.
+   * Input: users age (90).
+   * Output: number of years left (18).
+
+* Determine the user's time lived passed LE on Venus.
+   * Input: users age (90).
+   * Output: number of years left (29).
+
+* Determine the user's time lived passed LE on Mercury.
+   * Input: users age (90).
+   * Output: number of years left (75).
+
+* Determine the user's time lived passed LE on Mars.
+   * Input: users age (90).
+   * Output: number of years left (9).
+
+* Determine the user's time lived passed LE on Jupiter.
+   * Input: users age (90).
+   * Output: number of years left (1).
+
+### Calculations of a person of the same age as the LE on each planet:
+
+* A method which returns a human's age in Earth years:
+   * Input: user's age (72).
+   * Output: age in Earth years (72).
+
+* A method which returns a human's age in Venus years:
+   * Input: user's age (72).
+   * Output: age in Venus years (116).
+
+* A method which returns a human's age in Mercury years:
+   * Input: user's age (72).
+   * Output: age in Mercury years (300).
+
+* A method which returns a human's age in Mars years:
+   * Input: user's age (72).
+   * Output: age in Mars years (38).
+
+* A method which returns a human's age in Jupiter years:
+   * Input: user's age (72).
+   * Output: age in Jupiter years (6).
+
+* Determine the user's difference in LE and current age on Earth as nothing.
+   * Input: users age (72).
+   * Output: Difference between their age and the LE on this planet. (0).
+
+* Determine the user's difference in LE and current age on Venus as nothing.
+   * Input: users age (116).
+   * Output: Difference between their age and the LE on this planet. (0).
+
+* Determine the user's difference in LE and current age on Mercury as nothing.
+   * Input: users age (300).
+   * Output: Difference between their age and the LE on this planet. (0).
+
+* Determine the user's difference in LE and current age on Mars as nothing.
+   * Input: users age (38).
+   * Output: Difference between their age and the LE on this planet. (0).
+
+* Determine the user's difference in LE and current age on Jupiter as nothing.
+   * Input: users age (6).
+   * Output: Difference between their age and the LE on this planet. (0).
 
 ## Setup/Installation Requirements
 
