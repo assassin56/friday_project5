@@ -8,15 +8,15 @@ describe ('User', () => {
   //   expect(youngPerson.age).toEqual(35);
   // });
 
-  test ('should test for the users age in Venus years', () => {
-    youngPerson.calcVenus();
-    expect(youngPerson.venusAge).toEqual(56);
-  });
-
-  // test ('should test for the users age in Mercury years', () => {
-  //   youngPerson.calcMercury();
-  //   expect(youngPerson.mercuryAge).toEqual(145);
+  // test ('should test for the users age in Venus years', () => {
+  //   youngPerson.calcVenus();
+  //   expect(youngPerson.venusAge).toEqual(56);
   // });
+
+  test ('should test for the users age in Mercury years', () => {
+    youngPerson.calcMercury();
+    expect(youngPerson.mercuryAge).toEqual(145);
+  });
 
   // test ('should test for the users age in Mars years', () => {
   //   youngPerson.calcMars();
@@ -32,7 +32,11 @@ describe ('User', () => {
   //   expect(youngPerson.earthLE()).toEqual(37);
   // });
 
-  test ('should test for the users time left on Venus', () => {
-    expect(youngPerson.venusLE()).toEqual(60);
+  // test ('should test for the users time left on Venus', () => {
+  //   expect(youngPerson.venusLE()).toEqual(60);
+  // });
+
+  test ('should test for the users time left on Mercury', () => {
+    expect(youngPerson.mercuryLE()).toEqual(155);
   });
 });

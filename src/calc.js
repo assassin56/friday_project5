@@ -47,11 +47,19 @@ export class User {
     }
   }
 
-  // mercuryLE() {
-  //   const lifeExp = 300;
-  //   this.numYearsLeft = (lifeExp - this.mercuryAge);
-  //   this.numYearsPast = (-this.mercuryAge + lifeExp);
-  // }
+  mercuryLE() {
+    const lifeExp = 300;
+    if (this.mercuryAge === lifeExp) {
+      let variedTime = (this.mercuryAge - lifeExp);
+      return variedTime;
+    } else if (this.mercuryAge > lifeExp) {
+      let variedTime = (this.mercuryAge - lifeExp);
+      return variedTime;
+    } else if (this.mercuryAge < lifeExp) {
+      let variedTime = (lifeExp - this.mercuryAge);
+      return variedTime;
+    }
+  }
 
   // marsLE() {
   //   const lifeExp = 38;
